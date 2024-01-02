@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#numberButtons {
+    display: grid;
+    grid-template-areas: 
+    "seven eight nine"
+    "four five six"
+    "one two three"
+    "clear zero decimal";
+}
+
+#nine {
+    grid-area: one;
+}
