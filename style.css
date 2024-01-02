@@ -1,11 +1,14 @@
+/* Resets margin and padding and centers the calculator */
 body {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: gray;
 }
 
+/* Creates the layout for the numbers, clear, and decimal */
 #numberButtons {
     display: grid;
     grid-template-areas: 
@@ -15,6 +18,7 @@ body {
     "clear zero decimal";
 }
 
+/* Sets the layout for the operator buttons */
 #operatorButtons {
     display: grid;
     grid-template-areas:
@@ -23,4 +27,35 @@ body {
     "subtract"
     "add"
     "equals";
+}
+
+/* Sets the overall layout of the calculator */
+#calculatorBody {
+    display: grid;
+    grid-template-areas:
+    "calculatorDisplay calculatorDisplay"
+    "numberButtons operatorButtons";
+    border: 2px solid yellow;
+}
+
+/* Places the display */
+#calculatorDisplay {
+    grid-area: "calculatorDisplay";
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+/* Places the numbers to the left */
+#numberButtons {
+    grid-area: "numberButtons";
+    width: 290px;
+    border: 2px solid red;
+}
+
+/* Places the operators */
+#operatorButtons {
+    grid-area: "operatorButtons";
+    width: 290px;
+    border: 2px solid purple;
 }
