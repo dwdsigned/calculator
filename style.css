@@ -33,29 +33,34 @@ body {
 #calculatorBody {
     display: grid;
     grid-template-areas:
-    "calculatorDisplay calculatorDisplay"
-    "numberButtons operatorButtons";
+    "calDisplay calDisplay"
+    "numButtons opButtons"
+    "numButtons opButtons";
+    grid-template-rows: 150px 150px  150px;
+    grid-template-columns: 150px 150px;
     border: 2px solid yellow;
 }
 
 /* Places the display */
 #calculatorDisplay {
-    grid-area: "calculatorDisplay";
-    width: 600px;
-    height: 300px;
+    grid-area: calDisplay;
+    /* width: 290px;
+    height: 140px; */
     border: 2px solid black;
 }
 
 /* Places the numbers to the left */
 #numberButtons {
-    grid-area: "numberButtons";
-    width: 290px;
+    grid-area: numButtons;
+    /* width: 140px;
+    height: 440px; */
     border: 2px solid red;
 }
 
 /* Places the operators */
 #operatorButtons {
-    grid-area: "operatorButtons";
-    width: 290px;
+    grid-area: opButtons;
+    /* width: 140px;
+    height: 440px; */
     border: 2px solid purple;
 }
