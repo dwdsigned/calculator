@@ -35,6 +35,20 @@ for (button of operators) {
 const calculatorDisplay = document.getElementById("calculatorDisplay");
 console.log(calculatorDisplay);
 
-const enteredNumbers = [533, 34, 243, 34];
+// const enteredNumbers = [];
+const enteredNumbers = [533, 34, 243, 77];
 
-calculatorDisplay.textContent = `${enteredNumbers[0]} ${enteredNumbers[1]} ${enteredNumbers[2]} ${enteredNumbers[3]}`;
+// calculatorDisplay.textContent = `${enteredNumbers[i]} ${enteredNumbers[i]} ${enteredNumbers[i]} ${enteredNumbers[i]}`
+
+// for (number of enteredNumbers) {
+//     calculatorDisplay.textContent = `${enteredNumbers[i]}`;
+
+// }
+
+for (let i=0; i < enteredNumbers.length; i++) {
+    console.log(enteredNumbers[i]);
+    calculatorDisplay.textContent = `${enteredNumbers[i]}`;
+}
+
+
+// for each digits, push its textContent to the enteredNumbers array on key press
